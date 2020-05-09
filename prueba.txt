@@ -1,6 +1,26 @@
 contexto:Espacio
+
+objetivos del personaje:moverse por el escenario esquivando y a la vez agarrando tanques de oxígeno para sobreivir
+
 escenarios{ estación espacial(dentro y fuera), Bases en en planetas, planetas, satéliter naturales  }
-modelo principal{ PJ traje espacial }
+escenario{estacion espacial(dentro)}=cámaras, comida, cables sueltos,mesas costados,pipetas.
+escenario{estacion espacial(fuera)}=asteroides, framentos dañados, paneles solares.
+escenario{ Bases en en planetas}=camas, sillas, mesas,aramarios.
+escenario{ planetas}= rocas,rover,carros de transporte, 'cohetes'.
+ escenario{satéliter naturales}=cráteres, bandera USA,nave alunizaje.
+
+recoleccion{apowerup}
+recoleccion{moneda}
+mecánica desplazamiento horizontal= https://www.youtube.com/watch?v=Q4rtR8iNFbY      -__-
+mecánica escenario esférico =se mueve el esnecario y se instancian los elemento
+mecánica escenario recto=  se va a instanciar un carril ???
+  
+ 
+ modelo principal{ PJ traje espacial }
+cinemática incial(poder saltar){comic stopmotios}
 
 
-cinemática incial(){}
+easter egg !carro en el esapcio¡
+
+
+!recursos steam¡
