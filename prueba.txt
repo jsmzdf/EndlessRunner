@@ -1,0 +1,6 @@
+contexto:Espacio
+escenarios{ estación espacial(dentro y fuera), Bases en en planetas, planetas, satéliter naturales  }
+modelo principal{ PJ traje espacial }
+
+
+cinemática incial(){}
