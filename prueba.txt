@@ -1,20 +1,55 @@
 contexto:Espacio
 
-objetivos del personaje:moverse por el escenario esquivando y a la vez agarrando tanques de oxígeno para sobreivir
+objetivos del personaje:moverse por el escenario esquivando y a la vez agarrando tanques de oxígeno para sobreivir, ala vez es
+presegido por un alien.
+personaje:es un pirata espacial.
 
-escenarios{ estación espacial(dentro y fuera), Bases en en planetas, planetas, satéliter naturales  }
-escenario{estacion espacial(dentro)}=cámaras, comida, cables sueltos,mesas costados,pipetas.
-escenario{estacion espacial(fuera)}=asteroides, framentos dañados, paneles solares.
-escenario{ Bases en en planetas}=camas, sillas, mesas,aramarios.
-escenario{ planetas}= rocas,rover,carros de transporte, 'cohetes'.
- escenario{satéliter naturales}=cráteres, bandera USA,nave alunizaje.
+recoleccion{moneda}:dinámica de mondeas por mapa.
 
-recoleccion{apowerup}
-recoleccion{moneda}
-mecánica desplazamiento horizontal= https://www.youtube.com/watch?v=Q4rtR8iNFbY      -__-
-mecánica escenario esférico =se mueve el esnecario y se instancian los elemento
-mecánica escenario recto=  se va a instanciar un carril ???
-  
+escenarios{ estación espacial(dentro y fuera), 
+            Bases en en planetas, planetas, satéliter naturales}
+escenario{estacion espacial(dentro)}=cámaras, 
+                                     comida, 
+                                     cables sueltos,
+                                     mesas costados,
+                                     pipetas.
+                                     {modenea:muestras}
+escenario{estacion espacial(fuera)}=asteroides, 
+                                    framentos dañados,
+                                    paneles solares.
+                                    {modenea:muestras}
+escenario{ Bases en en planetas}=camas,
+                                 sillas, 
+                                 mesas,
+                                 aramarios.
+                                 {mondeda:dinero, joyas}
+escenario{ planetas}= rocas,
+                      rover,
+                      carros de transporte, 
+                      'cohetes'.
+                      {modena:minerales o metales}
+escenario{satéliter naturales}=cráteres,
+                               bandera USA,
+                               nave alunizaje.
+                               {modena:camaras exploración}
+
+recoleccion{apowerup}(Cohete,
+                      escudo(aplia una vez),
+                      invencible(tiempo),
+                      monedas X2,
+                      iman,
+                      doble salto(condcionado))
+
+
+
+
+
+
+mecánica desplazamiento horizontal= traslación horizontal que va a dejar el personjale en un de los tres carriles si se intenta mover en otra direccion el movimiento crea fricción con el escenario,     https://www.youtube.com/watch?v=Q4rtR8iNFbY      -__-
+mecácina vertical=dependiendo de la escena la gravedad va a ser diferente 
+mecánica escenario esférico =se mueve el esnecario y se instancian los elemento el escenario rota hacia el personaje.
+mecánica escenario recto=  se genera un pasilli con cada elemento(obstáculo,powerup, tanque de oxíneno o moneda )y este se mueve al personaje.
+mecaminca powerpu esce=los escenarios depende del power up que se tenga para la instanciacion de usus objetos.
  
  modelo principal{ PJ traje espacial }
 cinemática incial(poder saltar){comic stopmotios}
