@@ -1,0 +1,4 @@
+capsula escala 2,2,2
+contro con respecto al plano 0,0,0
+centro izquierda -3 en z
+centro der 3 en z
