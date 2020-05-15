@@ -50,10 +50,13 @@ mecácina vertical=dependiendo de la escena la gravedad va a ser diferente
 mecánica escenario esférico =se mueve el esnecario y se instancian los elemento el escenario rota hacia el personaje.
 mecánica escenario recto=  se genera un pasilli con cada elemento(obstáculo,powerup, tanque de oxíneno o moneda )y este se mueve al personaje.
 mecaminca powerpu esce=los escenarios depende del power up que se tenga para la instanciacion de usus objetos.
- 
+ mecanica monedas=inteacción.
  modelo principal{ PJ traje espacial }
 cinemática incial(poder saltar){comic stopmotios}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!tarea
+mnetodologias de desarro
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 easter egg !carro en el esapcio¡
 
